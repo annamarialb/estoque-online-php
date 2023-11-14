@@ -20,7 +20,7 @@
     <title>Sistema</title>
     <style>
         body{
-            background-image: linear-gradient(45deg, #3ed6ae, #2edbf2);
+            background-image: linear-gradient(45deg, #91d1dd, #5ec2d4);
             color: #fff;
             text-align: center;
         }
