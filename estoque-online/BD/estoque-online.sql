@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 11/11/2023 às 01:24
+-- Tempo de geração: 14/11/2023 às 12:10
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.2.4
 
@@ -20,6 +20,49 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `estoque-online`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `fabricante`
+--
+
+CREATE TABLE `fabricante` (
+  `IdFabricante` int(11) NOT NULL,
+  `NomeFabricante` varchar(75) NOT NULL,
+  `CNPJFabricante` varchar(75) NOT NULL,
+  `EmailFabricante` varchar(75) NOT NULL,
+  `TelefoneFabricante` varchar(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `itens`
+--
+
+CREATE TABLE `itens` (
+  `iditem` int(11) NOT NULL,
+  `quantitens` int(11) NOT NULL,
+  `quantItensVend` int(11) NOT NULL,
+  `valcompraitens` int(11) NOT NULL,
+  `valorvendaitens` int(11) NOT NULL,
+  `datacompraitens` date NOT NULL,
+  `datavencitens` date NOT NULL,
+  `ativo` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `produto`
+--
+
+CREATE TABLE `produto` (
+  `CodRefProduto` int(11) NOT NULL,
+  `NomeProduto` varchar(45) NOT NULL,
+  `Usuario_idUser` varchar(45) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
 
