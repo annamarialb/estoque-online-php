@@ -20,7 +20,7 @@
         $result = mysqli_query($conexao, "INSERT INTO itens (nomeitem, quantitens, valcompraitens,valorvendaitens) 
         VALUES ('$nomeitem', '$quantitens', '$valcompraitens', '$valorvendaitens')");
 
-        header('Location: listarproduto.php');
+        header('Location: cadastroproduto.php');
     }
 
     ?>
@@ -45,7 +45,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(45deg, #3ed6ae, #2edbf2);
+    background-image: linear-gradient(45deg, #91d1dd, #5ec2d4);
 }
 
 .container {
@@ -112,7 +112,7 @@ body {
     display: block;
     width: 5rem;
     height: 0.3rem;
-    background-color: #6c63ff;
+    background-color: #5ec2d4;
     margin: 0 auto;
     position: absolute;
     border-radius: 10px;
@@ -251,7 +251,7 @@ body {
             <img src="imagem.webp" alt="">
         </div>
         <div class="form">
-            <form action="#">
+            <form action="cadastroproduto.php" method="POST">
                 <div class="form-header">
                     <div class="title">
                         <h1>Cadastro de Produtos</h1>
