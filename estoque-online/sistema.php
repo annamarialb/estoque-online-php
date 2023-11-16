@@ -16,33 +16,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Sistema</title>
     <style>
+             * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
         body{
-            background-image: linear-gradient(45deg, #91d1dd, #5ec2d4);
+            background-image: linear-gradient(45deg, #3ed6ae, #2edbf2);
             color: #fff;
             text-align: center;
+            line-height: 50px;
+        }
+
+        h1{
+            color: black;
+            margin-top: 20px;
+        }
+
+        h2{
+            color: #747474;
+            text-align: left;
+            border-bottom: 1px dashed #FFBD5A;
+            padding: 0px;
+        }
+
+        hr{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .cont{
+            display: flex;
+            align-items: center;
+            background-color: #F6F4F4;
+        }
+
+        .box{
+            font-family: 'Arial Black';
+            background-color: #F6F4F4;
+            width: 750px;
+            height: 300px;
+            color: black;
+            margin-left: 30px;
+        }
+
+        .image{
+            width: 480px;
+            height: 330px;
+            border: 50px solid #fde3a7d7;
+            border-radius: 10px;
+        }
+
+        .box-2{
+            padding: 100px;
+        }
+
+        ul{
+            font-family: 'Arial Narrow';
+            font-size: 20px;
+            line-height: 70px;
+            text-align: left;
+            padding: 10px;
+            align-items: center;
+            margin-top: 30px;
+            list-style-type: none;
+        }
+
+        .center{
+            text-align: center;
+            border: 1px solid #3ed6ae;
+            margin-left: 175px;
+            margin-right: 175px;
+            background-color: #3ed6ae;
+            border-radius: 20px;
+            padding: -10px;
+        }
+
+        .right{
+            text-align: right;
         }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Easy Estoque</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-    </div>
-    <div class="d-flex">
-        <a href="sair.php" class="btn btn-danger me-5">Sair</a>
-    </div>
-    </nav>
-    <br>
     <?php
 
         echo "<h1>Bem vindo <u>$logado</u></h1>";
 
     ?>
+    <hr>
+    <div class="cont">
+        <div class="box">
+            <h2>EASY ESTOQUE: Estoque online</h2>
+            <p>
+                <ul>
+                    <li>FAÇA SEU ESTOQUE FÁCIL E RÁPIDO</li>
+                    <li class="center">SIMPLIFIQUE A SUA VIDA NO COMÉRCIO</li>
+                    <li class="right">CADASTRE, EDITE E EXCLUA OS PRODUTOS</li>
+                </ul>
+            </p>
+        </div>
+        <div class="box-2">
+            <img  class="image" src="estoque.png" alt="Estoque">
+        </div>
+    </div>
+    <hr>
 </body>
 </html>

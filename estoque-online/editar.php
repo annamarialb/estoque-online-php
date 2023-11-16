@@ -37,16 +37,16 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+
 }
 
 body {
+    font-family: 'Arial Black';
     width: 100%;
     height: 100vh;
-    display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(45deg, #91d1dd, #5ec2d4);
+    background-image: linear-gradient(45deg, #3ed6ae, #5ec2d4);
 }
 
 .container {
@@ -54,6 +54,7 @@ body {
     height: 80vh;
     display: flex;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+    margin: 150px;
 }
 
 .form-image {
@@ -117,6 +118,12 @@ body {
     margin: 0 auto;
     position: absolute;
     border-radius: 10px;
+}
+
+input{
+    border: none;
+    padding: 10px 15px 10px 15px;
+    border-radius: 20px;
 }
 
 .input-group {
