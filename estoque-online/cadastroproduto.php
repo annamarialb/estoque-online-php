@@ -20,7 +20,7 @@
         $result = mysqli_query($conexao, "INSERT INTO itens (nomeitem, quantitens, valcompraitens,valorvendaitens) 
         VALUES ('$nomeitem', '$quantitens', '$valcompraitens', '$valorvendaitens')");
 
-        header('Location: cadastroproduto.php');
+        header('Location: listarproduto.php');
     }
 
     ?>
@@ -29,7 +29,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+    <title>Cadastrar Produtos</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
 * {
@@ -44,7 +44,7 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(45deg, #3ed6ae, #5ec2d4);
+    background-image: linear-gradient(45deg, #91d1dd, #5ec2d4);
 }
 
 .container {
@@ -52,7 +52,7 @@ body {
     height: 80vh;
     display: flex;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
-    margin: 40 auto;
+    margin: auto;
 }
 
 .form-image {
@@ -258,6 +258,7 @@ input{
     </style>
 </head>
 <body>
+    <?php include_once("menu.php"); ?>
 <div class="container">
         <div class="form-image">
             <img src="imagem.webp" alt="">
