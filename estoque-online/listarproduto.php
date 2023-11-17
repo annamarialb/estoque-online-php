@@ -26,7 +26,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema</title>
+    <title>Listar Produtos</title>
     <style>
         * {
             padding: 0;
@@ -34,7 +34,7 @@
             box-sizing: border-box;
         }
         body{
-            background-image: linear-gradient(45deg, #3ed6ae, #2edbf2);
+            background-image: linear-gradient(45deg, #91d1dd, #5ec2d4);
             color: #000;
             text-align: center;
         }
@@ -130,6 +130,7 @@
     </style>
 </head>
 <body>
+    <?php include_once("menu.php"); ?>
 
     <div class="top">
     
@@ -192,6 +193,7 @@
         </table>
     </div>
     <hr class="rodape">
+    <?php include_once("rodape.php"); ?>
 </body>
 <script>
     var search = document.getElementById('pesquisar');
