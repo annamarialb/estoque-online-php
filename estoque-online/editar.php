@@ -30,14 +30,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+    <title>Editar Produtos</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
 }
 
 body {
@@ -46,7 +45,7 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(45deg, #3ed6ae, #5ec2d4);
+    background-image: linear-gradient(45deg, #91d1dd, #5ec2d4);
 }
 
 .container {
@@ -262,7 +261,7 @@ input{
             <form action="saveEdit.php" method="POST">
                 <div class="form-header">
                     <div class="title">
-                        <h1>Cadastro de Produtos</h1>
+                        <h1>Editando Produto</h1>
                     </div>
                     
                 </div>
