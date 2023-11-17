@@ -55,10 +55,10 @@
         <a class="navbar-brand" href="index.php">HOME</a>
         </div>
         <div class="menu">
-        <a class="navbar-brand" href="?pg=listarproduto">PRODUTOS</a>
+        <a class="navbar-brand" href="listarproduto.php">PRODUTOS</a>
         </div>
         <div class="menu">
-        <a class="navbar-brand" href="?pg=cadastroproduto">CADASTRAR PRODUTOS</a>
+        <a class="navbar-brand" href="cadastroproduto.php">CADASTRAR PRODUTOS</a>
         </div>
     </div>
     <div class="d-flex">
